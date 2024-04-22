@@ -4,7 +4,6 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	color: ghostwhite;
 }
 
 body {
@@ -12,10 +11,16 @@ body {
 }
 
 header {
+	background: url('https://cdn.pixabay.com/photo/2016/11/18/16/51/leaves-1835780_1280.jpg');
+}
+
+header section {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #333;
+	width: 80%;
+	margin: 0 auto;
+	color: ghostwhite;
 }
 
 header .shop-name {
@@ -33,7 +38,7 @@ header .shop-name .logo img {
 	height: 35px;
 	color: #333;
 	padding-left: 5px;
-    width: 300px;
+	width: 300px;
 }
 
 nav {
@@ -43,14 +48,27 @@ nav {
 nav ul li {
 	display: inline-block;
 	margin-left: 20px;
+	list-style: none;
 }
 
 nav ul li a {
 	text-decoration: none;
-	transition: color 0.3s ease;
+	transition: color 0.3s;
+	letter-spacing: 1px;
+	color: ghostwhite;
 }
 
 nav ul li a:hover {
-	color: #10d123;
+	color: #a6de91;
 	cursor: pointer;
 }
+
+/* #418c74
+#428d74
+#154d3b
+#26614d
+
+#a6de91
+
+#dae2dd
+#f9f8f8 */

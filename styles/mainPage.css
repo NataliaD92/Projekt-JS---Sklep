@@ -1,0 +1,148 @@
+.container {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.filter-bar {
+	margin: 15px;
+}
+
+.filter-items {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-left: 25px;
+}
+.filter-items button {
+	background: none;
+	font-size: 16px;
+	padding: 10px;
+	margin-right: 15px;
+	list-style: none;
+	border: none;
+	letter-spacing: 1px;
+	text-decoration: none;
+	color: #418c74;
+	text-transform: uppercase;
+}
+
+.filter-items button:hover {
+	color: rgb(255, 0, 149);
+}
+
+.filter-items button.active {
+	background-color: #a6de91;
+	font-weight: bold;
+	border-radius: 8px;
+	color: #333;
+}
+
+.products-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.product-item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 400px;
+	margin: 5px;
+	transition: box-shadow 0.3s;
+}
+
+.product-item:hover {
+	box-shadow: 8px 8px 26px -7px rgba(66, 68, 90, 1);
+	cursor: pointer;
+}
+
+.product-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	padding: 10px 10px 0px 10px;
+}
+
+.product-description {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(65, 140, 116, 0.6);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	letter-spacing: 0.8px;
+	padding: 8px;
+}
+
+.product-item .product-category {
+	display: none;
+}
+
+.product-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* TEST KOLORÓW */
+
+.try-colors {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.try-colors .square {
+	width: 150px;
+	height: 150px;
+	border: 5px solid #333;
+	margin: 5px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+.c1 {
+	background-color: rgb(65, 140, 116);
+}
+
+.c2 {
+	background-color: #428d74;
+}
+
+.c3 {
+	background-color: #154d3b;
+}
+
+.c4 {
+	background-color: #26614d;
+}
+
+.c5 {
+	background-color: #a6de91;
+}
+
+.c6 {
+	background-color: #dae2dd;
+}
+
+.c7 {
+	background-color: #f9f8f8;
+}
+
+.c8 {
+	background-color: #333;
+}
+/* #418c74
+#428d74
+#154d3b
+#26614d
+
+#a6de91
+
+#dae2dd
+#f9f8f8 */

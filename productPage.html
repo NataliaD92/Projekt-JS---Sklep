@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/productPage.css">
+    <script src="https://kit.fontawesome.com/d96e087458.js" crossorigin="anonymous"></script>
+    <script src="./scripts/productPage.js"></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <div class="shop-name">
+                <div class='logo'><img src="./assets/icon.png" alt="leaf icon"></div>
+                <h1>Domowa Dżungla</h1>
+            </div>
+        </section>
+    </header>
+    <main class="container">
+        <button id="go-to-mainPage"><i class="fa-solid fa-left-long"></i> Powrót do listy</button>
+        <section class="plant-description">
+            <img src="https://cdn.pixabay.com/photo/2020/05/24/12/12/salsify-5213992_640.jpg" alt="">
+            <div>
+                <h2 class="plant-name">Lorem ipsum.</h2>
+                <p class="plant-price">20xł</p>
+                <p class="plant-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis
+                    voluptas sed harum fugiat magni error animi velit officiis accusantium.</p>
+            </div>
+        </section>
+        <section class="plant-additional-products">
+            <h2>Dodaj do zamówienia:</h2>
+            <div class="plant-add">
+                <input type="checkbox" id="plant-soil">
+                <label for="plant-soil">Odpowiednie podłoże (10zł)</label>
+            </div>
+            <div class="plant-add">
+                <input type="checkbox" id="plant-fertilizer">
+                <label for="plant-fertilizer">Nawóz (10zł)</label>
+            </div>
+            <div class="plant-add">
+                <input type="checkbox" id="plant-flowerpot">
+                <label for="plant-flowerpot">Doniczka (10zł)</label>
+            </div>
+
+        </section>
+        <section class="buyer-info">
+            <h2>Dane zamawiającego</h2>
+            <label for="name">Imię i nazwisko</label>
+            <input type="text" id="name">
+            <label for="address">Miejsce odbioru</label>
+            <input type="text" id="address">
+            <label for="delivery-date">Data odbioru (Tutaj ma być kalendarz z 14 dniami automatycznie od daty dzisiejszej -
+                SELECT ?)</label>
+            <input type="date" id="delivery-date">
+            <label for="comments">Uwagi do zamówienia</label>
+            <textarea name="comment" id="comments" cols="50" rows="5"></textarea>
+        </section>
+        <section class="payment">
+            <h2>Sposób płatności - dodać radiobuttony</h2>
+            <input type="radio" id="blik">
+            <label for="blik">BLIK</label>
+            <input type="radio" id="bank-transfer">
+            <label for="bank-transfer">Tradycyjny przelew bankowy</label>
+        </section>
+        <section class="summary">
+            <h2>Podsumowanie - podsumowanie też można zrobić dopiero w tej karcie następnej, albo i tu i tu</h2>
+            <p>wypisać jakie są wybrane produkty i cena wszystkiego</p>
+        </section>
+        <button>(ikona koszyka) Kupuję</button>
+    </main>
+
+</body>
+
+</html>

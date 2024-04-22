@@ -1,0 +1,12 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.plant-description{
+    display: flex;
+}
+
+.buyer-info{
+    display: flex;
+    flex-direction: column;
+}
