@@ -1,0 +1,53 @@
+.container{
+    height: calc(100vh - 75px);
+    }
+
+#go-to-product-page {
+	height: 30px;
+	width: 190px;
+	margin: 20px 0 20px 30px;
+	background-color: #a6de91;
+	border: none;
+	border-radius: 8px;
+	transition: background-color 0.3s, box-shadow 0.3s;
+	font-size: 16px;
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+#go-to-product-page:hover {
+	box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
+	cursor: pointer;
+	background-color: rgba(65, 140, 116, 0.6);
+    color: ghostwhite
+}
+
+.summary{
+    margin: 0 auto;
+}
+
+.plant-name{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.summary img{
+    display: block;
+    margin: 0 auto 30px auto;
+    width: 500px;
+    box-shadow: 8px 8px 26px -7px rgba(66, 68, 90, 1);
+}
+
+.summary p{
+    text-align: center;
+    margin: 15px;
+    font-size: 18px;
+}
+
+.payment-method, .total-price{
+    font-size: 22px;
+    font-weight: bold;
+}

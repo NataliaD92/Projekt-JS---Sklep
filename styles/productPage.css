@@ -1,12 +1,178 @@
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
-.plant-description{
-    display: flex;
+#go-to-mainPage {
+	height: 30px;
+	width: 190px;
+	margin: 20px 0 20px 50px;
+	background-color: #a6de91;
+	border: none;
+	border-radius: 8px;
+	transition: background-color 0.3s, box-shadow 0.3s;
+	font-size: 16px;
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	transition: background-color 0.5s, color 0.5s;
 }
 
-.buyer-info{
+.fa-left-long {
+	font-size: 22px;
+}
+
+#go-to-mainPage:hover {
+	box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
+	cursor: pointer;
+	background-color: rgba(65, 140, 116, 0.6);
+    color: ghostwhite
+}
+
+.plant-container {
+	display: flex;
+	gap: 20px;
+}
+
+.plant-container img {
+	width: 600px;
+	height: auto;
+	border-radius: 20px;
+	box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
+	margin: 0 50px;
+}
+
+.plant-description {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.plant-description .plant-name {
+	font-size: 28px;
+}
+
+.plant-description .price {
+	font-size: 30px;
+}
+
+.plant-description ul li {
+	padding: 10px;
+	font-size: 18px;
+	list-style: none;
+}
+
+.plant-description ul li .fa-circle-check {
+	margin-right: 10px;
+}
+
+.plant-additional-products{
+    margin: 20px 0 20px 50px;
+}
+
+.plant-additional-products .plant-add{
+    padding: 10px;
+    font-size: 18px;
+}
+
+.plant-additional-products .plant-add input{
+    scale: 1.8;
+    margin-right: 10px;
+}
+
+.form{
     display: flex;
-    flex-direction: column;
+    gap: 40px;
+}
+
+.buyer-info {
+	display: flex;
+	flex-direction: column;
+    margin-left: 50px;
+}
+
+.buyer-info label {
+	padding: 8px 0;
+    font-size: 18px;
+}
+
+.buyer-info input, .buyer-info select{
+    width: 400px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px
+}
+
+.buyer-info textarea{
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+}
+
+.payment-method{
+    margin: 20px 0 20px 50px; 
+}
+
+.payment-method h2{
+    margin-bottom: 15px 
+}
+
+.payment-method input{
+    scale: 1.6;
+}
+
+.payment-method label{
+    padding: 10px;
+    
+}
+
+.summary{
+    margin: 20px 0 20px 50px;
+}
+
+.added-product{
+    padding: 8px 0;
+    font-size: 18px;
+}
+
+.added-product .total-price{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.validation-info{
+    color:tomato;
+    text-align: center;
+    background-color: rgba(65, 140, 116, 0.5);
+    box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
+    line-height: 30px;
+    width: 60%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+ #submit-button {
+	height: 30px;
+	width: 300px;
+	margin: 20px auto 50px auto;
+	background-color: #a6de91;
+	border: none;
+	border-radius: 8px;
+	transition: background-color 0.3s, box-shadow 0.3s;
+	font-size: 18px;
+	padding: 20px;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+	transition: background-color 0.5s, color 0.5s;
+}
+
+.fa-basket-shopping {
+	font-size: 22px;
+}
+
+#submit-button:hover {
+	box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
+	cursor: pointer;
+	background-color: rgba(65, 140, 116, 0.6);
+    color: ghostwhite;
 }

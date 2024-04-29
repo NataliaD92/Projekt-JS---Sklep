@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/productPage.css">
     <script src="https://kit.fontawesome.com/d96e087458.js" crossorigin="anonymous"></script>
-    <script src="./scripts/productPage.js"></script>
+    <script defer src="./scripts/products.js"></script>
+    <script defer src="./scripts/productPage.js"></script>
 </head>
 
 <body>
@@ -22,28 +23,21 @@
     </header>
     <main class="container">
         <button id="go-to-mainPage"><i class="fa-solid fa-left-long"></i> Powrót do listy</button>
-        <section class="plant-description">
-            <img src="https://cdn.pixabay.com/photo/2020/05/24/12/12/salsify-5213992_640.jpg" alt="">
-            <div>
-                <h2 class="plant-name">Lorem ipsum.</h2>
-                <p class="plant-price">20xł</p>
-                <p class="plant-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus perferendis
-                    voluptas sed harum fugiat magni error animi velit officiis accusantium.</p>
-            </div>
+        <section class="plant-about">
         </section>
         <section class="plant-additional-products">
             <h2>Dodaj do zamówienia:</h2>
             <div class="plant-add">
                 <input type="checkbox" id="plant-soil">
-                <label for="plant-soil">Odpowiednie podłoże (10zł)</label>
+                <label for="plant-soil">Odpowiednie podłoże - <span class="price">10</span>zł</label>
             </div>
             <div class="plant-add">
                 <input type="checkbox" id="plant-fertilizer">
-                <label for="plant-fertilizer">Nawóz (10zł)</label>
+                <label for="plant-fertilizer">Nawóz - <span class="price">15</span>zł</label>
             </div>
             <div class="plant-add">
                 <input type="checkbox" id="plant-flowerpot">
-                <label for="plant-flowerpot">Doniczka (10zł)</label>
+                <label for="plant-flowerpot">Doniczka - <span class="price">20</span>zł</label>
             </div>
 
         </section>
@@ -53,24 +47,23 @@
             <input type="text" id="name">
             <label for="address">Miejsce odbioru</label>
             <input type="text" id="address">
-            <label for="delivery-date">Data odbioru (Tutaj ma być kalendarz z 14 dniami automatycznie od daty dzisiejszej -
-                SELECT ?)</label>
-            <input type="date" id="delivery-date">
+            <label for="delivery-date">Data odbioru</label>
+            <select id="delivery-date"></select>
             <label for="comments">Uwagi do zamówienia</label>
             <textarea name="comment" id="comments" cols="50" rows="5"></textarea>
         </section>
-        <section class="payment">
-            <h2>Sposób płatności - dodać radiobuttony</h2>
-            <input type="radio" id="blik">
+        <section class="payment-method">
+            <h2>Sposób płatności</h2>
+            <input type="radio" id="blik" name="payment-method" value="blik">
             <label for="blik">BLIK</label>
-            <input type="radio" id="bank-transfer">
+            <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
             <label for="bank-transfer">Tradycyjny przelew bankowy</label>
         </section>
         <section class="summary">
-            <h2>Podsumowanie - podsumowanie też można zrobić dopiero w tej karcie następnej, albo i tu i tu</h2>
-            <p>wypisać jakie są wybrane produkty i cena wszystkiego</p>
+            <h2>Podsumowanie</h2>
         </section>
-        <button>(ikona koszyka) Kupuję</button>
+        <div class="validation-info"></div>
+        <button id="submit-button"><i class="fa-solid fa-basket-shopping"></i>Kupuję</button>
     </main>
 
 </body>
