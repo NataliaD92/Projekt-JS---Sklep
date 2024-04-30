@@ -8,6 +8,10 @@ body {
 	background-position: center;
 }
 
+.container {
+	min-height: calc(100vh - 175px);
+}
+
 .search-bar input {
 	min-width: 200px;
 	height: 35px;
@@ -143,4 +147,33 @@ footer {
 	color: ghostwhite;
 	text-decoration: none;
 	padding: 5px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.filter-items {
+		margin-left: 0;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.filter-items button {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	header .shop-name {
+		display: flex;
+		max-width: 150px;
+		align-items: center;
+	}
+
+	.search-bar input {
+		min-width: 100px;
+		max-width: 200px;
+		height: 35px;
+		color: #333;
+		padding: 5px;
+		width: 300px;
+		font-size: 15px;
+	}
 }

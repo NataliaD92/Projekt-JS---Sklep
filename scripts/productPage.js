@@ -56,6 +56,7 @@ function showSelectedPlant() {
 showSelectedPlant()
 
 // Checkboxy i podsumowanie ceny
+
 let totalPrice = 0
 
 function showAddedProducts() {
@@ -82,7 +83,6 @@ function showAddedProducts() {
 	}
 
 	const showTotalPrice = document.createElement('p')
-	// showTotalPrice.textContent = `Cena wszystkich kupowanych produktów: ${totalPrice.toFixed(2)} zł`
 	showTotalPrice.classList.add('added-product')
 	showTotalPrice.innerHTML = `Cena wszystkich kupowanych produktów: <span class="total-price">${totalPrice.toFixed(
 		2
@@ -98,7 +98,6 @@ showAddedProducts()
 
 const checkboxes = $addedProducts.querySelectorAll('input[type="checkbox"]')
 
-// Dodaj nasłuchiwanie na zdarzenie change dla każdego checkboxa
 checkboxes.forEach(checkbox => {
 	checkbox.addEventListener('click', showAddedProducts)
 })
@@ -107,20 +106,17 @@ checkboxes.forEach(checkbox => {
 
 const $nameInput = document.getElementById('name')
 const $addressInput = document.getElementById('address')
-// const $deliveryDateInput = document.getElementById('delivery-date')
 const $commentsInput = document.getElementById('comments')
 
 function saveForm() {
 	localStorage.setItem('name', $nameInput.value)
 	localStorage.setItem('address', $addressInput.value)
-	// localStorage.setItem('deliveryDate', $deliveryDateInput.value)
 	localStorage.setItem('comments', $commentsInput.value)
 }
 
 function loadForm() {
 	$nameInput.value = localStorage.getItem('name')
 	$addressInput.value = localStorage.getItem('address')
-	// $deliveryDateInput.value = localStorage.getItem('deliveryDate')
 	$commentsInput.value = localStorage.getItem('comments')
 }
 
@@ -128,7 +124,6 @@ document.addEventListener('DOMContentLoaded', loadForm)
 
 $nameInput.addEventListener('input', saveForm)
 $addressInput.addEventListener('input', saveForm)
-// $deliveryDateInput.addEventListener('input', saveForm)
 $commentsInput.addEventListener('input', saveForm)
 
 //Data odbioru
@@ -198,7 +193,6 @@ const validationInfo = document.querySelector('.validation-info')
 submitBtn.addEventListener('click', () => {
 	const nameInputSplit = $nameInput.value.split(' ')
 	if (nameInputSplit.length !== 2) {
-		// alert('Wpisz poprawne imię i nazwisko')
 		const nameAlert = document.createElement('p')
 		nameAlert.textContent = 'Wpisz poprawne imię i nazwisko'
 		validationInfo.innerHTML = ''
@@ -207,7 +201,6 @@ submitBtn.addEventListener('click', () => {
 	}
 
 	if ($addressInput.value === '') {
-		// alert('Uzupełnij miejsce odbioru')
 		const addressAlert = document.createElement('p')
 		addressAlert.textContent = 'Uzupełnij miejsce odbioru'
 		validationInfo.innerHTML = ''
@@ -216,7 +209,6 @@ submitBtn.addEventListener('click', () => {
 	}
 
 	if (!blikRadio.checked && !bankTransferRadio.checked) {
-		// alert('Wybierz sposób płatności')
 		const paymentMethodAlert = document.createElement('p')
 		paymentMethodAlert.textContent = 'Wybierz sposób płatności'
 		validationInfo.innerHTML = ''

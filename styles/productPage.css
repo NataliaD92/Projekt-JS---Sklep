@@ -22,7 +22,7 @@
 	box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
 	cursor: pointer;
 	background-color: rgba(65, 140, 116, 0.6);
-    color: ghostwhite
+	color: ghostwhite;
 }
 
 .plant-container {
@@ -62,93 +62,95 @@
 	margin-right: 10px;
 }
 
-.plant-additional-products{
-    margin: 20px 0 20px 50px;
+.plant-additional-products {
+	margin: 20px 0 20px 50px;
 }
 
-.plant-additional-products .plant-add{
-    padding: 10px;
-    font-size: 18px;
+.plant-additional-products .plant-add {
+	padding: 10px;
+	font-size: 18px;
 }
 
-.plant-additional-products .plant-add input{
-    scale: 1.8;
-    margin-right: 10px;
+.plant-additional-products .plant-add input {
+	scale: 1.8;
+	margin-right: 10px;
 }
 
-.form{
-    display: flex;
-    gap: 40px;
+.form {
+	display: flex;
+	gap: 40px;
 }
 
 .buyer-info {
 	display: flex;
 	flex-direction: column;
-    margin-left: 50px;
+	margin-left: 50px;
 }
 
 .buyer-info label {
 	padding: 8px 0;
-    font-size: 18px;
+	font-size: 18px;
 }
 
-.buyer-info input, .buyer-info select{
-    width: 400px;
-    height: 40px;
-    padding: 8px;
-    font-size: 16px
+.buyer-info input,
+.buyer-info select {
+	width: 400px;
+	height: 40px;
+	padding: 8px;
+	font-size: 16px;
 }
 
-.buyer-info textarea{
-    width: 400px;
-    height: 200px;
-    padding: 10px;
+.buyer-info textarea {
+	width: 400px;
+	height: 200px;
+	padding: 10px;
 }
 
-.payment-method{
-    margin: 20px 0 20px 50px; 
+.payment-method {
+	margin: 20px 0 20px 50px;
 }
 
-.payment-method h2{
-    margin-bottom: 15px 
+.payment-method h2 {
+	margin-bottom: 15px;
 }
 
-.payment-method input{
-    scale: 1.6;
+.payment-method input {
+	scale: 1.6;
 }
 
-.payment-method label{
-    padding: 10px;
-    
+.payment-method label {
+	padding: 10px;
+	font-size: 18px;
 }
 
-.summary{
-    margin: 20px 0 20px 50px;
+.summary {
+	margin: 20px 0 20px 50px;
 }
 
-.added-product{
-    padding: 8px 0;
-    font-size: 18px;
+.added-product {
+	padding: 8px 0;
+	font-size: 18px;
 }
 
-.added-product .total-price{
-    font-size: 22px;
-    font-weight: bold;
+.added-product .total-price {
+	font-size: 22px;
+	font-weight: bold;
 }
 
-.validation-info{
-    color:tomato;
-    text-align: center;
-    background-color: rgba(65, 140, 116, 0.5);
-    box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
-    line-height: 30px;
-    width: 60%;
-    margin: 0 auto;
-    text-transform: uppercase;
-    font-size: 18px;
+.validation-info {
+	color: red;
+	text-align: center;
+	background-color: rgba(65, 140, 116, 0.8);
+	box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
+	line-height: 30px;
+	width: 60%;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 22px;
 }
 
- #submit-button {
+#submit-button {
 	height: 30px;
 	width: 300px;
 	margin: 20px auto 50px auto;
@@ -161,8 +163,8 @@
 	display: flex;
 	gap: 10px;
 	align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
+	justify-content: center;
+	text-transform: uppercase;
 	transition: background-color 0.5s, color 0.5s;
 }
 
@@ -174,5 +176,50 @@
 	box-shadow: 8px 8px 20px -7px rgba(66, 68, 90, 1);
 	cursor: pointer;
 	background-color: rgba(65, 140, 116, 0.6);
-    color: ghostwhite;
+	color: ghostwhite;
+}
+
+@media only screen and (max-width: 900px) {
+	.container {
+		width: 90%;
+	}
+
+	.plant-container img {
+		width: 80%;
+		height: auto;
+		margin: 25px auto;
+	}
+
+	.plant-container {
+		flex-direction: column;
+		gap: 0;
+	}
+
+	.plant-description {
+		margin: 20px 50px;
+	}
+
+	.buyer-info input,
+	.buyer-info select,
+	.buyer-info textarea {
+		width: 80%;
+	}
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1400px) {
+	.container {
+		width: 90%;
+	}
+
+	.plant-container img {
+		width: 50%;
+		height: auto;
+		margin: 20px;
+	}
+
+	.plant-description ul li,
+	.plant-additional-products .plant-add,
+	.payment-method label {
+		font-size: 20px;
+	}
 }

@@ -27,12 +27,10 @@ function showSelectedPlant() {
 	$productImage.src = $selectedPlant.image
 
 	const $paymentMethod = document.createElement('p')
-	// $paymentMethod.textContent = `Wybrany sposób płatności to: ${paymentMethod}`
-	$paymentMethod.innerHTML = `Wybrany sposób płatności to: <span class="payment-method">${paymentMethod}</span>`;
+	$paymentMethod.innerHTML = `Wybrany sposób płatności to: <span class="payment-method">${paymentMethod}</span>`
 
 	const $productPrice = document.createElement('p')
-	// $productPrice.textContent = `Cena za cały zakup to: ${totalPrice} zł`
-	$productPrice.innerHTML = `Cena za cały zakup to: <span class="total-price">${totalPrice} zł</span>`;
+	$productPrice.innerHTML = `Cena za cały zakup to: <span class="total-price">${totalPrice} zł</span>`
 
 	$productContainer.appendChild($thanks)
 	$productContainer.appendChild($productImage)
